@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejemplo responsive slide</title>
+  <link rel="stylesheet" href="estilo.css">
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="responsiveslides.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+
+</head>
+
+<body>
+  <header class="ancho">
+    <figure class="logo">
+      <h2>LOGO</h2>
+    </figure>
+    <nav>
+      <h2>MENU</h2>
+    </nav>
+  </header>
+  <section class="contenedor_slide ancho">
+    <ul class="rslides">
+      <li><img src="fotos_slide/fotos_slide/slide1.jpg" alt=""></li>
+      <li><img src="fotos_slide/fotos_slide/slide2.jpg" alt=""></li>
+      <li><img src="fotos_slide/fotos_slide/slide3.jpg" alt=""></li>
+      <li><img src="fotos_slide/fotos_slide/slide4.jpg" alt=""></li>
+    </ul>
+    <div class="contenedor_texto">
+      <h2>Necesitas relajarte para poder continuar</h2>
+      <br>
+      <h3>Nosotros te ayudamos...</h3>
+      <br>
+      <a href="#" class="btn_rojo">Más información</a>
+    </div>
+  </section>
+  <br>
+  <section class="apartado2 ancho">
+    <article class="columna1">
+      <figure>
+        <img class="fotospuestos" src="fotos2/fotos2/foto1.jpeg" alt="">
+        <img class="iconos" src="fotos2/fotos2/icono_1.png" alt="">
+      </figure>
+      <br>
+      <h2>IT Consultancy</h2>
+      <br>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem natus officiis quas accusantium. Excepturi quod assumenda non vero nemo explicabo esse possimus asperiores sequi sunt, tempore id blanditiis saepe temporibus?
+      </p>
+      <br>
+      <a href="#" class="boton_naranja">Ver mas</a>
+    </article>
+    <article class="columna1">
+      <figure>
+        <img class="fotospuestos" src="fotos2/fotos2/foto2.jpeg" alt="">
+        <img class="iconos" src="fotos2/fotos2/icono_2.png" alt="">
+      </figure>
+      <br>
+      <h2>IT Consultancy</h2>
+      <br>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem natus officiis quas accusantium. Excepturi quod assumenda non vero nemo explicabo esse possimus asperiores sequi sunt, tempore id blanditiis saepe temporibus?
+      </p>
+      <br>
+      <a href="#" class="boton_naranja">Ver mas</a>
+    </article>
+    <article class="columna1">
+      <figure>
+        <img class="fotospuestos" src="fotos2/fotos2/foto3.jpeg" alt="">
+        <img class="iconos" src="fotos2/fotos2/icono_3.png" alt="">
+      </figure>
+      <br>
+      <h2>IT Consultancy</h2>
+      <br>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem natus officiis quas accusantium. Excepturi quod assumenda non vero nemo explicabo esse possimus asperiores sequi sunt, tempore id blanditiis saepe temporibus?
+      </p>
+      <br>
+      <a href="#" class="boton_naranja">Ver mas</a>
+    </article>
+  </section>
+  <br><br>
+  <h2 class="titulo">GALERIA DE FOTOS CON FANCYBOX JAVASCRIPT</h2>
+  <section class="ancho contenedor_galeria">
+    <a href="fotos_galeria/fotos_galeria/galeria1.jpg" data-fancybox="galeria" data-caption="Foto 1 galeria">
+      <figure>
+        <img src="fotos_galeria/fotos_galeria/galeria1.jpg" alt="">
+      </figure>
+    </a>
+    <a href="fotos_galeria/fotos_galeria/galeria2.jpg" data-fancybox="galeria" data-caption="Foto 2 galeria">
+      <figure>
+        <img src="fotos_galeria/fotos_galeria/galeria2.jpg" alt="">
+      </figure>
+    </a>
+    <a href="fotos_galeria/fotos_galeria/galeria3.jpg" data-fancybox="galeria" data-caption="Foto 3 galeria">
+      <figure>
+        <img src="fotos_galeria/fotos_galeria/galeria3.jpg" alt="">
+      </figure>
+    </a>
+    <a href="fotos_galeria/fotos_galeria/galeria4.jpg" data-fancybox="galeria" data-caption="Foto 4 galeria">
+      <figure>
+        <img src="fotos_galeria/fotos_galeria/galeria4.jpg" alt="">
+      </figure>
+    </a>
+    <a href="fotos_galeria/fotos_galeria/galeria5.jpg" data-fancybox="galeria" data-caption="Foto 5 galeria">
+      <figure>
+        <img src="fotos_galeria/fotos_galeria/galeria5.jpg" alt="">
+      </figure>
+    </a>
+
+  </section>
+
+  <!-- Funciones JS -->
+  <script>
+    $(function() {
+      $(".rslides").responsiveSlides();
+    });
+
+    Fancybox.bind('[data-fancybox="galeria"]', {
+      // Your custom options
+    });
+    
+  </script>
+</body>
+
+</html>
